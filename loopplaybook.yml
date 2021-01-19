@@ -1,0 +1,12 @@
+---
+- name: Loops Playbook
+  hosts: web3
+  become: yes
+
+  tasks:
+  - debug: msg="Hello {{ item }}"
+    loop:
+     - "Vasya"
+     - "Petya"
+     - "Russia"
+     - "Kolya"
