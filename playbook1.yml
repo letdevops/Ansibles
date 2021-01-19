@@ -17,4 +17,21 @@
           msg: "Sekretnoe slovo: {{ secret }}"
 
       - debug:
-          msg: "Vladelec Servera {{ owner }}"  
+          msg: "Vladelec Servera {{ owner }}"
+
+      - set_fact: full_message="{{ message1 }} {{ message2 }} from {{ owner }}"
+
+      - debug:
+          var: full_message
+
+      - debug:
+          msg: "{{ ansible_distribution }}"
+
+      - debug:
+          var: ansible_distribution
+
+      - shell: uptime
+        register: results
+
+      - debug:
+          var: results  
