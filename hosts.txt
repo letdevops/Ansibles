@@ -1,0 +1,5 @@
+[prod_servers_web]
+
+web1 ansible_host=172.26.10.183 owner=vasya
+web2 ansible_host=172.26.5.53 owner=petya
+web3 ansible_host=172.26.0.123 owner=lyonya

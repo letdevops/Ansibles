@@ -1,0 +1,15 @@
+---
+- name: Playbook for Variables
+  hosts: all
+  become: yes
+
+  vars:
+    message1: Privet
+    message2: World
+    secret  : sdgsdgsdgdf
+
+  tasks:
+
+  - name: Print Secret Variable
+    debug:
+      var: secret     
