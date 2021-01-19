@@ -15,3 +15,6 @@
 
       - debug:
           msg: "Sekretnoe slovo: {{ secret }}"
+
+      - debug:
+          msg: "Vladelec Servera {{ owner }}"  
